@@ -1,0 +1,46 @@
+
+@import url('https://fonts.cdnfonts.com/css/eurostile-extended');
+@import url('https://fonts.cdnfonts.com/css/organo-colored-2');
+@import url('https://fonts.cdnfonts.com/css/moderna');
+
+                
+
+* {
+    /* font-family: 'Eurostile Extended', sans-serif; */
+    /* font-family: 'Organo (colored version at: logomagazin.com/organo-font)', sans-serif; */
+    font-family: 'moderna', sans-serif;
+    font-weight: 700;
+    color: rgb(207, 207, 195);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 74rem;
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/28/13/39/server-room-8281620_1280.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
