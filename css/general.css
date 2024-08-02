@@ -17,6 +17,10 @@ p {
     font-family: 'Eurostile Extended', sans-serif;
 }
 
+li {
+    width: fit-content;
+}
+
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,102,203);
   } 
