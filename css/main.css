@@ -3,14 +3,6 @@ main {
     display: flex;
 }
 
-.around-left {
-    flex: 0.5;
-}
-
-.around-right {
-    flex: 0.5;
-}
-
 .big-title-container {
     display: flex;
     justify-content: center;
@@ -26,14 +18,62 @@ main {
     padding-top: 16rem;
     display: flex;
     flex-direction: column;
-    flex: 1;
     justify-content: center;
     align-items: center;
+    width: fit-content;
+}
+
+.bio-container span {
+    font-family: 'Eurostile Extended', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 15rem;
+}
+
+.bio-container {
+    background-color: rgba(32, 32, 32, 0.9);
+    width: fit-content;
+    display: flex;
+    text-align: start;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.bio-container .col span{
+    width: fit-content;
+}
+
+.bio-container p {
+    margin: 0;
+    width: 8rem;
+}
+
+.time-line-item {
+    position: relative;
+}
+
+.time-line {
+    position: absolute;
+    font-style: italic;
+    color: gray;
+    left: 100%;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+.picture-placeholder {
+    margin-left: 1rem;
+}
+
+.picture-placeholder-sm {
+    text-align: center;
 }
 
 .info-container {
+    order: 1;
     background-color: rgba(32, 32, 32, 0.9);
-    display: block;
     width: fit-content;
     text-align: center;
     line-height: 1.7rem;

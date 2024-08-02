@@ -13,6 +13,10 @@
     color: rgb(207, 207, 195);
 }
 
+p {
+    font-family: 'Eurostile Extended', sans-serif;
+}
+
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,102,203);
   } 
