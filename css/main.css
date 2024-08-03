@@ -1,8 +1,4 @@
 
-@import url('https://fonts.cdnfonts.com/css/eurostile-extended');
-@import url('https://fonts.cdnfonts.com/css/organo-colored-2');
-@import url('https://fonts.cdnfonts.com/css/moderna');
-
 main {
     display: flex;
 }
@@ -28,7 +24,7 @@ main {
 }
 
 .bio-container span {
-    font-family: 'Eurostile Extended', sans-serif;
+    font-family: Eurostile, sans-serif;
     font-weight: 500;
     font-size: 1rem;
     width: 15rem;
@@ -115,7 +111,7 @@ main {
     padding: 0;
     margin: 0;
     margin-bottom: 1rem;
-    font-family: 'Eurostile Extended', sans-serif;
+    font-family: Eurostile, sans-serif;
 }
 
 .languages-list {
@@ -123,7 +119,7 @@ main {
 }
 
 .languages-list li{
-    font-family: 'Eurostile Extended', sans-serif;
+    font-family: Eurostile, sans-serif;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -149,7 +145,7 @@ main {
 }
 
 .sports-list li {
-    font-family: 'Eurostile Extended', sans-serif;
+    font-family: Eurostile, sans-serif;
     font-weight: 500;
     font-size: 1rem;
     width: fit-content;
