@@ -155,6 +155,106 @@ main {
     left: 2.9rem;
 }
 
+.bio-container a {
+    color: rgb(207, 207, 195);
+    font-family: Eurostile, sans-serif;
+    font-weight: 600;
+}
+
+#certificate-container {
+    width: 35rem;
+}
+
+.certificate-bg {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    margin-right: 10px;
+}
+
+.certificate-img {
+    width: 15rem;
+    height: 10rem;
+    border-radius: 5px;
+}
+
+.programming-languages-list {
+    /*  */
+}
+
+.programming-languages-list ul {
+    margin-left: 2rem;
+    margin-top: 1.7rem;
+}
+
+.programming-languages-list ul li{
+    font-family: Eurostile, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.projects-wrapper {
+    background-color: rgba(32, 32, 32, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.projects-wrapper h1 {
+    font-size: 1.8rem;
+    font-family: Eurostile, sans-serif;
+    font-weight: 700;
+}
+
+.project-thumbnail {
+    width: 10rem;
+    height: 6rem;
+}
+
+.project-thumbnail-zoom {
+    position: absolute;
+    width: 28rem;
+    height: 18rem;
+    bottom: 30%;
+    left: 5%;
+    transform: scale(0);
+    transition: transform ease 150ms;
+}
+
+@media (min-width: 600px) {
+   
+    .project-thumbnail-zoom {
+        position: absolute;
+        width: 28rem;
+        height: 18rem;
+        bottom: 30%;
+        left: 35%;
+        transform: scale(0);
+        transition: transform ease 150ms;
+    }
+}
+
+.project-image-wrapper:hover .project-thumbnail-zoom {
+    transform: scale(1);
+}
+
+#projects .row {
+    margin-top: 2rem;
+}
+
+.project-container {
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+#projects-link {
+    text-decoration: none;
+}
+
+#projects-link:hover {
+    text-decoration: underline;
+}
+
+
 .learn-more-button {
     background-color: rgb(180, 109, 15);
     border: none;

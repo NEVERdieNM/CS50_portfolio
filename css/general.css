@@ -12,8 +12,18 @@
     color: rgb(207, 207, 195);
 }
 
+span {
+    font-family: Eurostile, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 p {
     font-family: Eurostile, sans-serif;
+}
+
+p b {
+    font-family: Eurostiile, sans-serif;
 }
 
 li {
