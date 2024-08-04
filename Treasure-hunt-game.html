@@ -41,11 +41,11 @@
           <br>
           <hr>
           <br>
-          <section class="container">
+          <section id="intro" class="container">
             <div class="row">
               <div class="col">
-                <div class="right-side-image-container"> 
-                  <a href="images/Projects/Treasure-hunt-thumbnail.png"><img class="image" src="images/Projects/Treasure-hunt-thumbnail.png" alt=""></a>
+                <div class="right-side-float"> 
+                  <a target="_blank" href="images/Projects/Treasure-hunt-thumbnail.png"><img class="image" src="images/Projects/Treasure-hunt-thumbnail.png" alt=""></a>
                 </div>
                 <p class="text">
                   I started working on this project because while working with Greenfoot in the first course I took, after a few weeks I started asking myself how Greenfoot actually works under the hood and how the functions that do all the heavy lifting for you work. <br>
@@ -56,20 +56,70 @@
                 </p>  
               </div>
             </div>
+          </section>
             <hr>
+          <section id="project-showcase" class="container">
             <div class="row">
               <div class="col">
-                <div class="left-side-image-container">
-                  <a href="images/Projects/Treasure-hunt-frame.png">
-                    <img  class="image" src="images/Projects/Treasure-hunt-frame.png" alt="">
-                  </a>
-                </div>
                 <p class="text">
-                  I first had to learn how to create a Window in which I could later draw my game into
+                  In the you spawn in the middle of an island and have to find the treasure, but you will encounter some difficulties, like locked doors and fallen branches, to get past these obstacles you have to find the appropiate tools. <br>
+                  there is also a timer so you can compete with friends and family to see who can get the best score! 
                 </p>
+                <video class="project-video-demo" controls="on" src="videos/Treasure-hunt-game-demo.mp4"></video>
               </div>
             </div>
           </section>
+          <hr>
+          <section id="what-I-learned" class="container">
+            <div class="row">
+              <div class="col">
+                <p class="text">
+                  I first had to learn how to create a <b>window</b> in which I could later draw my game into. <br>
+                </p>
+                <div class="image-left">
+                  <a target="_blank" href="images/Projects/Treasure-hunt-frame.png">
+                    <img  class="image" src="images/Projects/Treasure-hunt-frame.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    I then had to learn about the <b>gameloop</b> and the different implementations there are.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Treasure-hunt-gameloop.png">
+                      <img  class="image" src="images/Projects/Treasure-hunt-gameloop.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    I learned a lot more from this project but another thing I learned and still find interesting is the <b>world coordinate system</b> and the <b>screen coordinate system</b>, I learned how to convert the world coordinates into screen coordinates and used that to create a camera effect that follows the player character.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Treasure-hunt-gameloop.png">
+                      <img  class="image" src="images/Projects/Treasure-hunt-gameloop.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h5>Other things I learned:</h5>
+                  <ul class="learned-list">
+                    <li>Key handling</li>
+                    <li>Even handling</li>
+                    <li>Collision checking</li>
+                    <li>Sound implementation</li>
+                    <li>UI</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <hr>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
