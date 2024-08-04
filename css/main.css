@@ -218,6 +218,7 @@ main {
     left: 5%;
     transform: scale(0);
     transition: transform ease 150ms;
+    pointer-events: none;
 }
 
 @media (min-width: 600px) {
