@@ -56,6 +56,10 @@ body::before {
     z-index: -1;
 }
 
+.project::before {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 main {
     display: flex;
     justify-content: center;
