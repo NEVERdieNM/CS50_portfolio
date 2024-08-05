@@ -185,12 +185,12 @@ main {
 
 .programming-languages-list ul {
     margin-left: 2rem;
-    margin-top: 1.7rem;
+    margin-top: 1rem;
 }
 
 .programming-languages-list ul li{
     font-family: Eurostile, sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .projects-wrapper {
