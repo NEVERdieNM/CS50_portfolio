@@ -62,3 +62,18 @@ body {
     width: 50%;
     margin-left: 5rem;
 }
+
+.github-link {
+    color: rgb(210, 210, 203);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.github *{
+    transition: font-size ease 150ms;
+}
+
+.github:hover *{
+    font-size: 1.3rem;
+}
