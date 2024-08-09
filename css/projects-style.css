@@ -77,3 +77,14 @@ body {
 .github:hover *{
     font-size: 1.3rem;
 }
+
+#ransomware-demo {
+    width: 65%;
+}
+
+@media (max-width: 800px) {
+    #ransomware-demo {
+        margin-left: 0;
+        width: 100%;
+    }
+}
