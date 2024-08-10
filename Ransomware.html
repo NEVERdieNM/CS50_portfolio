@@ -45,7 +45,7 @@
             <div class="row">
               <div class="col">
                 <div class="right-side-float"> 
-                  <a target="_blank" href="images/Projects/Ransomeware-thumbnail.png"><img class="image" src="images/Projects/Ransomeware-thumbnail.png" alt=""></a>
+                  <a target="_blank" href="images/Projects/Ransomware/Ransomeware-thumbnail.png"><img class="image" src="images/Projects/Ransomware/Ransomeware-thumbnail.png" alt=""></a>
                 </div>
                 <p class="text">
                   This was the first time I wrote a programm in Python except for when I first installed the Python intepreter and wrote a <b>"Hello, World!"</b> programm. <br>
@@ -83,26 +83,34 @@
             </div>
           </section>
           <hr>
-          <section id="what-I-learned" class="container">
+          <section id="encrypt-py" class="container">
+            <div class="row">
+              <div class="col">
+                <h3 style="text-align: center; margin-bottom: 3rem;">Encrypt.py</h3>
+              </div>
+            </div>
             <div class="row">
               <div class="col">
                 <p class="text">
-                  I first had to learn how to create a <b>window</b> in which I could later draw my game into. <br>
+                  The program first <b>generates a key</b> then gets <b>a list of all files in the current directory</b>, and then <b>4 arrays</b> get initialized, one for files that <b>will get encrypted</b>, one for files that <b>got encrypted</b>, another for files that <b>failed to encrypt</b> and the last one is for <b>the errors that came along</b> with the files that failed to encrypt. <br>
+                  There is also a variable <b>UNIQUE_STRING</b> which is a string of choice, which helps identify already encrypted files.
                 </p>
                 <div class="image-left">
-                  <a target="_blank" href="images/Projects/Treasure-hunt-frame.png">
-                    <img  class="image" src="images/Projects/Treasure-hunt-frame.png" alt="">
+                  <a target="_blank" href="images/Projects/Ransomware/encrypt/Ransomware-init.png">
+                    <img  class="image" src="images/Projects/Ransomware/encrypt/Ransomware-init.png" alt="">
                   </a>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <p class="text">
-                    I then had to learn about the <b>gameloop</b> and the different implementations there are.
+                    The program then checks if there are any files that <b>have already been encrypted</b> by checking if the current file <b>contains the unique string</b> at the beginning. <br>
+                    If it finds a file that has already been encrypted it tells the user and asks if they want to continue encryption. <br>
+                    All files get added to files_to_encrypt.
                   </p>
                   <div class="image-left">
-                    <a target="_blank" href="images/Projects/Treasure-hunt-gameloop.png">
-                      <img  class="image" src="images/Projects/Treasure-hunt-gameloop.png" alt="">
+                    <a target="_blank" href="images/Projects/Ransomware/encrypt/Ransomware-check-for-encrypted.png">
+                      <img  class="image" src="images/Projects/Ransomware/encrypt/Ransomware-check-for-encrypted.png" alt="">
                     </a>
                   </div>
                 </div>
@@ -110,26 +118,117 @@
               <div class="row">
                 <div class="col">
                   <p class="text">
-                    I learned a lot more from this project but another thing I learned and find interesting is the <b>world coordinate system</b> and the <b>screen coordinate system</b>, I learned how to convert the world coordinates into screen coordinates and used that to create a camera effect that follows the player character. <br>
-                    This also helped calculate what objects from the world coordinate system will appear on screen and then only draw the ones that do appear on screen, this doesn't make a big difference in this little game, but it is a good habit to optimize your game
+                    Then all files that will get encrypted are printed out for the user.
                   </p>
                   <div class="image-left">
-                    <a target="_blank" href="images/Projects/Treasure-hunt-gameloop.png">
-                      <img  class="image" src="images/Projects/Treasure-hunt-gameloop.png" alt="">
+                    <a target="_blank" href="images/Projects/Ransomware/encrypt/Ransomware-log-ready-to-encrypt.png">
+                      <img  class="image" src="images/Projects/Ransomware/encrypt/Ransomware-log-ready-to-encrypt.png" alt="">
                     </a>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <h5>Other things I learned:</h5>
-                  <ul class="learned-list">
-                    <li>Key handling</li>
-                    <li>Even handling</li>
-                    <li>Collision checking</li>
-                    <li>Sound implementation</li>
-                    <li>UI</li>
-                  </ul>
+                  <p class="text">
+                    <b>encrypt_recursive</b> is called next, encrypt_recursive encrypts all files recursively and any files that fail to encrypt are added to <b>failed_to_encrypt</b> and their error is added in <b>failed_to_encrypt_error</b>.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Ransomware/encrypt/Ransomware-encrypt-recursive.png">
+                      <img class="image" src="images/Projects/Ransomware/encrypt/Ransomware-encrypt-recursive.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    <b>log_encrypted</b> prints out all the files that have been <b>successfully encrypted</b>.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Ransomware/encryptRansomware-log-encrypted.png">
+                      <img class="image" src="images/Projects/Ransomware/encrypt/Ransomware-log-encrypted.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    <b>log_failed_to_encrypt</b> prints out all the files that have <b>failed to encrypt</b> along with the error that caused encryption to fail.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Ransomware/encrypt/Ransomware-log-failed-to-encrypt.png">
+                      <img class="image" src="images/Projects/Ransomware/encrypt/Ransomware-log-failed-to-encrypt.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    At last the <b>key</b> used to encrypt all the files is stored inside <b>key.txt</b>.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Ransomware/encrypt/Ransomware-output-key.png">
+                      <img class="image" src="images/Projects/Ransomware/encrypt/Ransomware-output-key.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr>
+            <section id="decrypt-py" class="container">
+              <div class="row">
+                <div class="col">
+                  <h3 style="text-align: center; margin-bottom: 3rem;">Decrypt.py</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    The program first checks if the <b>key.txt file exist</b>, if it doesn't it <b>terminates execution</b>, else it continues and <b>opens key.txt</b>, gets a list of all files in the current directory and <b>initializes 3 arrays</b>, one for <b>decrypted files</b>, one for files that <b>failed to decrypt</b> and one for the <b>errors of the files</b> that failed to decrypt.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Ransomware/decrypt/Ransomware-decrypt-recursive.png">
+                      <img class="image" src="images/Projects/Ransomware/decrypt/Ransomware-decrypt-recursive.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    <b>log_decrypted</b> prints out all decrypted files.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Ransomware/decrypt/Ransomware-log-decrypted.png">
+                      <img class="image" src="images/Projects/Ransomware/decrypt/Ransomware-log-decrypted.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    <b>log_failed_decrypted</b> prints out all the files that failed to decrypt.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Ransomware/decrypt/Ransomware-log-failed-decrypted.png">
+                      <img class="image" src="images/Projects/Ransomware/decrypt/Ransomware-log-failed-decrypted.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text">
+                    At last the <b>key.txt file</b> is deleted.
+                  </p>
+                  <div class="image-left">
+                    <a target="_blank" href="images/Projects/Ransomware/decrypt/Ransomware-remove-key.png">
+                      <img class="image" src="images/Projects/Ransomware/decrypt/Ransomware-remove-key.png">
+                    </a>
+                  </div>
                 </div>
               </div>
             </section>
