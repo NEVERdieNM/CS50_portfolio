@@ -1,0 +1,17 @@
+
+.icon-wrapper {
+    padding: 0;
+    width: fit-content;
+    margin: 0 0.2rem;
+}
+
+.star-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: fit-content;
+}
+
+.star-icon {
+    width: 200%;
+}
